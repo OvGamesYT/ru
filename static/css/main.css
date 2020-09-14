@@ -568,7 +568,6 @@ input, select {
 				display: inline-block;
 				font-style: normal;
 				font-variant: normal;
-				text-rendering: auto;
 				line-height: 1;
 				text-transform: none !important;
 				font-family: 'Font Awesome 5 Free';
@@ -694,7 +693,6 @@ input, select {
 			display: inline-block;
 			font-style: normal;
 			font-variant: normal;
-			text-rendering: auto;
 			line-height: 1;
 			text-transform: none !important;
 			font-family: 'Font Awesome 5 Free';
@@ -727,7 +725,6 @@ input, select {
 	}
 
 		.image:before {
-			pointer-events: none;
 			background-image: url("/../en/static/images/overlay.png");
 			background-color: rgba(19, 21, 25, 0.5);
 			border-radius: 4px;
@@ -1189,7 +1186,6 @@ input, select {
 		button:disabled,
 		.button.disabled,
 		.button:disabled {
-			pointer-events: none;
 			cursor: default;
 			opacity: 0.25;
 		}
