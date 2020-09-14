@@ -1,10 +1,7 @@
 {
-  "name": "Ovgames",
-  "short_name": "Overgames",
-  "start_url": "https://ovgamesyt.github.io/ru/#",
-  "display": "standalone",
-  "background_color": "#fff",
-  "description": "We're creating awesome games.",
+  "short_name": "Ovgames",
+  "name": "Overgames",
+  "start_url": ".",
   "icons": [
     {
       "src": "/ru/static/favicon/favicon.ico",
@@ -22,7 +19,7 @@
       "type": "image/png"
     }
   ],
-  "related_applications": [{
-    "platform": "web"
-  }]
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff"
 }
