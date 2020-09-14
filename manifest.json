@@ -1,7 +1,7 @@
 {
   "name": "Ovgames",
   "short_name": "Overgames",
-  "start_url": "",
+  "start_url": "https://ovgamesyt.github.io/ru/#",
   "display": "standalone",
   "background_color": "#fff",
   "description": "We're creating awesome games.",
