@@ -1788,8 +1788,8 @@ input, select, textarea {
 			}
 
 		header.major > h1 {
-			letter-spacing: 5px;
 			width: 90%;
+			letter-spacing: 0.2em;
 			margin-bottom: 0;
 			text-transform: uppercase;
 		}
