@@ -1788,7 +1788,7 @@ input, select, textarea {
 			}
 
 		header.major > h1 {
-			font-weight: 10;
+			letter-spacing: 2px;
 			width: 90%;
 			letter-spacing: 0.25em;
 			margin-bottom: 0;
