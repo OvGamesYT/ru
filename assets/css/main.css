@@ -1791,6 +1791,8 @@ input, select, textarea {
 			letter-spacing: 0.25em;
 			margin-bottom: 0;
 			text-transform: uppercase;
+			
+			word-wrap: break-word;
 		}
 
 
