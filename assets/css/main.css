@@ -1775,24 +1775,22 @@ input, select, textarea {
 		margin-bottom: 2em;
 	}
 
-		
+	header.major > p {
+		font-size: 0.7em;
+		font-weight: 600;
+		letter-spacing: 0.25em;
+		margin-bottom: 0;
+		-transform: uppercase;
+	}
 
-
-		header.major > p {
-			font-size: 0.7em;
-			font-weight: 600;
-			letter-spacing: 0.25em;
-			margin-bottom: 0;
-			text-transform: uppercase;
-		}
-
-		header.major > h1 {
-			word-wrap: break-word;
-			background-color: #ffffff;
-			display: block;
-			height: 2px;
-			margin: 0.325em 0 0.5em 0;
-		}
+	header.major > h1 {
+		word-wrap: break-word;
+		background-color: #ffffff;
+		display: block;
+		height: 2px;
+		margin: 0.325em 0 0.5em 0;
+		width: 100%;
+	}
 
 	@media screen and (max-width: 736px) {
 
