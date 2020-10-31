@@ -1772,16 +1772,11 @@ input, select, textarea {
 	}
 
 	header.major {
-		width: -moz-max-content;
-		width: -webkit-max-content;
-		width: -ms-max-content;
-		width: max-content;
 		margin-bottom: 2em;
 	}
 
 		header.major > :first-child {
 			margin-bottom: 0;
-			width: calc(100% + 0.5em);
 		}
 
 			header.major > :first-child:after {
@@ -1790,7 +1785,6 @@ input, select, textarea {
 				display: block;
 				height: 2px;
 				margin: 0.325em 0 0.5em 0;
-				width: 100%;
 			}
 
 		header.major > p {
@@ -1801,9 +1795,6 @@ input, select, textarea {
 			text-transform: uppercase;
 		}
 
-		body.is-ie header.major > :first-child:after {
-			max-width: 9em;
-		}
 
 	@media screen and (max-width: 736px) {
 
