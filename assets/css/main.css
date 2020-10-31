@@ -1788,13 +1788,11 @@ input, select, textarea {
 			}
 
 		header.major > h1 {
+			font-weight: 600;
+			width: 90%;
 			letter-spacing: 0.25em;
 			margin-bottom: 0;
 			text-transform: uppercase;
-
-			width: auto;
-
-			word-wrap: break-word;
 		}
 
 
