@@ -1777,13 +1777,6 @@ input, select, textarea {
 
 		
 
-		header.major > :first-child:after {
-			content: '';
-			background-color: #ffffff;
-			display: block;
-			height: 2px;
-			margin: 0.325em 0 0.5em 0;
-		}
 
 		header.major > p {
 			font-size: 0.7em;
@@ -1795,6 +1788,10 @@ input, select, textarea {
 
 		header.major > h1 {
 			word-wrap: break-word;
+			background-color: #ffffff;
+			display: block;
+			height: 2px;
+			margin: 0.325em 0 0.5em 0;
 		}
 
 	@media screen and (max-width: 736px) {
