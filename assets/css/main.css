@@ -4307,7 +4307,7 @@ a {
 
 .T75of {
     background-size: contain;
-    border-radius: inherit;
+    border-radius: 25px;
 }
 
 img {
