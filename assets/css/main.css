@@ -4258,12 +4258,12 @@ c-wiz {
 
 .drrice .hrTbp {
     /*color: rgb(164, 223, 142);*/
-    font-size: 13px;
 }
 
 .R8zArc,
 .R8zArc:visited {
     font-weight: 700;
+    font-size: 13px;
 }
 
 a {
