@@ -4256,8 +4256,9 @@ c-wiz {
     margin-right: 15px;
 }
 
-.drrice .hrTbp
+.drrice .hrTbp {
     /*color: rgb(164, 223, 142);*/
+    font-size: 13px;
 }
 
 .R8zArc,
@@ -4314,7 +4315,6 @@ img {
 
 .dNLKff {
     /*color: rgb(171, 163, 152);*/
-    font-size: 13px;
 }
 
 .dNLKff {
