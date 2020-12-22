@@ -4178,11 +4178,6 @@ c-wiz {
     margin: 40px auto 0 auto;
 }
 
-.ZfcPIb {
-    margin-left: 0px;
-    margin-right: 0px;
-}
-
 .D0ZKYe {
     height: 1px;
     padding-right: 30px;
@@ -4330,8 +4325,8 @@ img {
 
 
 .ZfcPIb {
-    margin-left: -49px;
-    margin-right: -49px;
+    margin-left: 0px;
+    margin-right: 0px;
     display: flex;
 }
 
