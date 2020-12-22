@@ -4033,7 +4033,7 @@ input, select, textarea {
 .T75of {
     background-size: contain;
 }
-
+/*
 img,
 html,
 body,
@@ -4069,8 +4069,8 @@ applet {
 
 img {
     vertical-align: middle;
-}
-
+}*/
+/*
 img,
 html,
 body,
@@ -4105,7 +4105,7 @@ applet {
     margin: 0;
     padding: 0;
 }
-
+*/
 * {
     -webkit-tap-highlight-color: transparent;
 }
@@ -4309,11 +4309,11 @@ a {
     background-size: contain;
     border-radius: 25px;
 }
-
+/*
 img {
     vertical-align: middle;
 }
-
+*/
 .dNLKff {
     /*color: rgb(171, 163, 152);*/
 }
