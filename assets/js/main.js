@@ -20,6 +20,14 @@
         }
     }
 
+    $(document).ready(function() {
+        if (window.location.hash[0] == "#") {
+            $('html, body').animate({
+                scrollTop: $(window.location.hash).offset().top
+            }, 'slow');
+        }
+    });
+
     // var
     var $window = $(window),
         $body = $('body'),
