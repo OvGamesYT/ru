@@ -3,16 +3,6 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-    var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-        document.getElementById("header").style.top = "0";
-    } else {
-        document.getElementById("header").style.top = "-50px";
-    }
-    prevScrollpos = currentScrollPos;
-}
 
 (function($) {
 
@@ -209,8 +199,10 @@ window.onscroll = function() {
                 bottom: $header.height() + 10,
                 terminate: function() { $header.removeClass('alt'); },
                 enter: function() { $header.addClass('alt'); },
-                leave: function() { $header.removeClass('alt');
-                    $header.addClass('reveal'); }
+                leave: function() {
+                    $header.removeClass('alt');
+                    $header.addClass('reveal');
+                }
             });
 
             window.setTimeout(function() {
