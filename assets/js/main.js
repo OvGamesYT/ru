@@ -4,29 +4,6 @@
     Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 (function($) {
-    // scroller
-    var prevScrollpos = window.pageYOffset;
-    window.onscroll = function() {
-        var currentScrollPos = window.pageYOffset;
-        if (window.pageYOffset == 0) {
-            document.getElementById("header").style.top = "0";
-        } else {
-            if (prevScrollpos > currentScrollPos) {
-                document.getElementById("header").style.top = "0";
-            } else {
-                document.getElementById("header").style.top = "-75px";
-            }
-            prevScrollpos = currentScrollPos;
-        }
-    }
-
-    $(document).ready(function() {
-        if (window.location.hash[0] == "#") {
-            $('html, body').animate({
-                scrollTop: $(window.location.hash).offset().top
-            }, 'slow');
-        }
-    });
 
     // var
     var $window = $(window),
