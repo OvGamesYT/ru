@@ -74,3 +74,8 @@ $(document).ready(function() {
         smoothScroll(hash);
     }
 });
+
+
+function openHrefInHash(href) {
+    window.location.href = href + window.location.hash;
+}
