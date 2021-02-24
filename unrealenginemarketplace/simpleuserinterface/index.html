@@ -84,8 +84,8 @@
             <!-- Two -->
             <section id="two" class="spotlights">
                 <section id="button">
-                    <a href="../../unrealenginemarketplace/simpleuserinterface/" class="image">
-                        <img src="../../images/unrealenginemarketplace/simpleuserinterface/button.png" alt="" data-position="center center" />
+                    <a onclick="onclickimg(`imgbutton`, `button`)" class="image">
+                        <img id="imgbutton" class="img" src="../../images/unrealenginemarketplace/simpleuserinterface/button.png" alt="button" data-position="center center" />
                     </a>
                     <div class="content">
                         <div class="inner">
@@ -101,7 +101,7 @@
                 </section>
                 <section id="checkbutton">
                     <a href="../../unrealenginemarketplace/simpleuserinterface/" class="image">
-                        <img src="../../images/unrealenginemarketplace/simpleuserinterface/checkbutton.png" alt="" data-position="top center" />
+                        <img id="imgcheckbutton" class="img" onclick="onclickimg(`imgcheckbutton`, `checkbutton`)" src="../../images/unrealenginemarketplace/simpleuserinterface/checkbutton.png" alt="" data-position="top center" />
                     </a>
                     <div class="content">
                         <div class="inner">
@@ -117,7 +117,7 @@
                 </section>
                 <section id="checkbuttonarray">
                     <a href="../../unrealenginemarketplace/simpleuserinterface/" class="image">
-                        <img src="../../images/unrealenginemarketplace/simpleuserinterface/checkbuttonarray.png" alt="" data-position="25% 25%" />
+                        <img id="imgcheckbuttonarray" class="img" onclick="onclickimg(`imgcheckbuttonarray`, `checkbuttonarray`)" src="../../images/unrealenginemarketplace/simpleuserinterface/checkbuttonarray.png" alt="" data-position="25% 25%" />
                     </a>
                     <div class="content">
                         <div class="inner">
@@ -133,7 +133,7 @@
                 </section>
                 <section id="radiobuttonarray">
                     <a href="../../unrealenginemarketplace/simpleuserinterface/" class="image">
-                        <img src="../../images/unrealenginemarketplace/simpleuserinterface/radiobuttonarray.png" alt="" data-position="top center" />
+                        <img id="imgradiobuttonarray" class="img" onclick="onclickimg(`imgradiobuttonarray`, `radiobuttonarray`)" src="../../images/unrealenginemarketplace/simpleuserinterface/radiobuttonarray.png" alt="" data-position="top center" />
                     </a>
                     <div class="content">
                         <div class="inner">
@@ -149,7 +149,7 @@
                 </section>
                 <section id="scrollselectorarray">
                     <a href="../../unrealenginemarketplace/simpleuserinterface/" class="image">
-                        <img src="../../images/unrealenginemarketplace/simpleuserinterface/scrollselectorarray.png" alt="" data-position="25% 25%" />
+                        <img id="imgscrollselectorarray" class="img" onclick="onclickimg(`imgscrollselectorarray`, `scrollselectorarray`)" src="../../images/unrealenginemarketplace/simpleuserinterface/scrollselectorarray.png" alt="" data-position="25% 25%" />
                     </a>
                     <div class="content">
                         <div class="inner">
@@ -165,7 +165,7 @@
                 </section>
                 <section id="selector">
                     <a href="../../unrealenginemarketplace/simpleuserinterface/" class="image">
-                        <img src="../../images/unrealenginemarketplace/simpleuserinterface/selector.png" alt="" data-position="top center" />
+                        <img id="imgselector" class="img" onclick="onclickimg(`imgselector`, `selector`)" src="../../images/unrealenginemarketplace/simpleuserinterface/selector.png" alt="" data-position="top center" />
                     </a>
                     <div class="content">
                         <div class="inner">
@@ -195,6 +195,12 @@
             </div>
         </footer>
     </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
     <!-- Scripts -->
     <script src="../../assets/js/jquery.min.js"></script>
     <script src="../../assets/js/jquery.scrolly.min.js"></script>
@@ -204,6 +210,31 @@
     <script src="../../assets/js/util.js"></script>
     <script src="../../assets/js/main.js"></script>
     <script src="../../assets/js/smooth.scroll.js"></script>
+    <script type="text/javascript">
+    // Get the modal
+    function onclickimg(id, caption) {
+        console.log(id + " " + caption)
+        var modal = document.getElementById("myModal");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("myImg");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function() {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+    }
+    </script>
 </body>
 
 </html>
